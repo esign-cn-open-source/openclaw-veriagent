@@ -1,4 +1,4 @@
-# @esign-cn-open-source/openclaw-veriagent
+# @esign-cn/openclaw-veriagent
 
 OpenClaw-side local plugin wrapper for VeriAgent onboarding and certificate tools.
 
@@ -18,7 +18,7 @@ OpenClaw-side local plugin wrapper for VeriAgent onboarding and certificate tool
 ## Install
 
 ```bash
-npx -y --package @esign-cn-open-source/openclaw-veriagent veriagent-openclaw install
+npx -y --package @esign-cn/openclaw-veriagent veriagent-openclaw install
 ```
 
 ## Runtime state

@@ -1,5 +1,5 @@
 {
-  "name": "@esign-cn-open-source/openclaw-veriagent",
+  "name": "@esign-cn/openclaw-veriagent",
   "entry": "./scripts/cli.js",
   "commands": [
     {

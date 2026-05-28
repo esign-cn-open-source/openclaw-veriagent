@@ -293,7 +293,7 @@ const definePluginEntry = tryLoadDefinePluginEntry()
 
 const entry = definePluginEntry({
   id: pluginManifest.id,
-  name: '@esign-cn-open-source/openclaw-veriagent',
+  name: '@esign-cn/openclaw-veriagent',
   version: packageJson.version,
 
   register(api) {

@@ -1,6 +1,6 @@
 {
-  "name": "@esign-cn-open-source/openclaw-veriagent",
-  "version": "1.0.0",
+  "name": "@esign-cn/openclaw-veriagent",
+  "version": "0.0.1",
   "description": "Browser-led VeriAgent onboarding and local certificate tools for OpenClaw.",
   "author": "VeriAgent Team",
   "license": "MIT",
