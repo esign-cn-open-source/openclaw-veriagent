@@ -1,0 +1,36 @@
+openclaw.plugin.json
+  s_ca4becaf33d2ee::t_55d068b6b0be96 3
+package.json
+  s_ca4becaf33d2ee::t_515b20db9faeb2 2
+  h_21303ad0bd36f1 3
+scripts/openclaw-tools.js
+  s_ca4becaf33d2ee::t_2587df1b8ab36f 296
+commands.json
+  s_ca4becaf33d2ee::t_6f82d858813104 2
+README.md
+  h_21303ad0bd36f1 21
+  s_ca4becaf33d2ee::t_f31636db031be6 1
+.gitignore
+  h_21303ad0bd36f1 1-6
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.4.11",
+  "base_commit_sha": "b9199dfb7a1ea4d430b6e4778f1a61b93bb6f80c",
+  "prompts": {},
+  "humans": {
+    "h_21303ad0bd36f1": {
+      "author": "jiangling <jiangling@veriagent.ai>"
+    }
+  },
+  "sessions": {
+    "s_ca4becaf33d2ee": {
+      "agent_id": {
+        "tool": "claude",
+        "id": "26440dd0-d877-4c05-9270-65c34e34d520",
+        "model": "auto"
+      },
+      "human_author": "jiangling <jiangling@veriagent.ai>"
+    }
+  }
+}
