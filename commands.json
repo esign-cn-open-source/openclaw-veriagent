@@ -1,0 +1,53 @@
+{
+  "name": "@esign-cn-open-source/openclaw-veriagent",
+  "entry": "./scripts/cli.js",
+  "commands": [
+    {
+      "name": "install",
+      "argv": ["install"],
+      "description": "Start browser-led VeriAgent onboarding and keep polling terminal state."
+    },
+    {
+      "name": "status",
+      "argv": ["status"],
+      "description": "Print local plugin state and remote onboarding snapshot."
+    },
+    {
+      "name": "list-agents",
+      "argv": ["list-agents"],
+      "description": "List locally stored VeriAgent agent materials and certificates."
+    },
+    {
+      "name": "sign",
+      "argv": ["sign", "<agentId>", "--text", "<text>"],
+      "description": "Sign plain text with the local VeriAgent agent certificate."
+    },
+    {
+      "name": "verify",
+      "argv": ["verify", "<agentId>", "--text", "<text>", "--signature", "<base64>"],
+      "description": "Verify a signature with the local VeriAgent agent certificate."
+    },
+    {
+      "name": "reset",
+      "argv": ["reset"],
+      "description": "Clear local plugin runtime state."
+    }
+  ],
+  "installProfiles": {
+    "local": {
+      "portalBaseUrl": "http://localhost:5174",
+      "apiBaseUrl": "http://localhost:6879",
+      "command": "openclaw veriagent init"
+    },
+    "beta": {
+      "portalBaseUrl": "https://test-app.veriagent.ai",
+      "apiBaseUrl": "https://test-veriagent.tsign.cn",
+      "command": "openclaw veriagent init"
+    },
+    "prod": {
+      "portalBaseUrl": "https://app.veriagent.ai",
+      "apiBaseUrl": "https://api.veriagent.ai",
+      "command": "openclaw veriagent init"
+    }
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "name": "@esign-cn-open-source/openclaw-veriagent",
+  "version": "1.0.0",
+  "description": "Browser-led VeriAgent onboarding and local certificate tools for OpenClaw.",
+  "author": "VeriAgent Team",
+  "license": "MIT",
+  "homepage": "https://veriagent.ai",
+  "bugs": {
+    "email": "dev@veriagent.ai"
+  },
+  "openclaw": {
+    "extensions": [
+      "./scripts/openclaw-tools.js"
+    ],
+    "compat": {
+      "pluginApi": ">=2026.3.24-beta.2",
+      "minGatewayVersion": "2026.3.24-beta.2"
+    },
+    "build": {
+      "openclawVersion": "2026.3.24-beta.2"
+    }
+  },
+  "keywords": [
+    "veriagent",
+    "openclaw",
+    "agent",
+    "certificate",
+    "signature"
+  ],
+  "bin": {
+    "veriagent-openclaw": "scripts/cli.js"
+  },
+  "scripts": {
+    "package:plugin": "npm pack",
+    "release:plugin": "node scripts/release-plugin.js public",
+    "release:plugin:private": "node scripts/release-plugin.js private",
+    "release:plugin:public": "node scripts/release-plugin.js public"
+  },
+  "files": [
+    "scripts/cli.js",
+    "scripts/openclaw-tools.js",
+    "README.md",
+    "commands.json",
+    "openclaw.plugin.json",
+    ".codex-plugin/plugin.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@esign-cn/veriagent-core": "0.0.1"
+  }
+}
